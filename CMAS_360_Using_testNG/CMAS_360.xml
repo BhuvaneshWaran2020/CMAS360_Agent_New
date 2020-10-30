@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Cmas_360_Agent">
+
+	<test name="save_testcases">
+		<classes>
+			<class name="testCases.TC_001"></class>
+		</classes>
+	</test>
+
+
+	<test name="Check_testcases">
+		<classes>
+			<class name="testCases.TC_002"></class>
+		</classes>
+
+
+
+	</test>
+
+	<test name="cancel_testcases">
+		<classes>
+			<class name="testCases.TC_003"></class>
+		</classes>
+
+
+
+	</test>
+
+
+
+</suite>
