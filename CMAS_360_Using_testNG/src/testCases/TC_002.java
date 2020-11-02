@@ -44,17 +44,19 @@ public class TC_002 extends Base_class
 			e.printStackTrace();
 		}
 		
+		Thread.sleep(3000);
+		
 		TC001_Page_Objects.Save_Button.click();
 		
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		
 		TC001_Page_Objects.Ok.click();
 		
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		
 		String Actual_value=driver.findElement(By.xpath("//*[@id='tblcompany']/tbody/tr[1]/td[2]")).getText();
 		
-		Thread.sleep(5000);
+		
 		 
 		/*(OR)
 		Using below Xpath

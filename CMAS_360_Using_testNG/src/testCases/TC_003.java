@@ -53,7 +53,7 @@ public class TC_003 extends Base_class
 		TC001_Page_Objects.Cancel_Button.click();
 		Thread.sleep(5000);
 
-		String actual_value=driver.findElement(By.xpath("//*[@id='tblcompany']/tbody/tr[*]/td[text()='Eicher']")).getText();
+		String actual_value=driver.findElement(By.xpath("//*[@id='tblcompany']/tbody/tr[*]/td[text()='bhuvanesh']")).getText();
 		System.out.println(actual_value);
 		
 		String expected_value="Rndsoft";

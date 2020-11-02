@@ -60,11 +60,15 @@ public class TC001_Page_Objects
 	//*[@id='company_form']/following::div[4]/button[2]
 */	
 	
-	@FindBy(xpath="//*[@id='company_form']/following::div[4]/button[2]")
+	/*@FindBy(xpath="//*[@id='company_form']/following::div[4]/button[2]")
+	public static WebElement Save_Button;*/
+	
+	@FindBy(xpath="//button[@class='btn save-btn box-shadow saveBtn waves-effect waves-themed']")
 	public static WebElement Save_Button;
 	
 	
-	@FindBy(xpath="//*[@id='company_form']/following::div[4]/button[1]")
+	
+	@FindBy(xpath="//button[@class='btn btn-dark ml-auto waves-effect waves-themed box-shadow closeForm']")
 	public static WebElement Cancel_Button;
 	
 	@FindBy(xpath="//*[@id='myBtn']/i")
