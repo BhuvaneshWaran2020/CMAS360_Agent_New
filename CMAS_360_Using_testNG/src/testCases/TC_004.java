@@ -59,7 +59,7 @@ public class TC_004 extends Base_class
 			Assert.assertTrue(false);
 		}else if(actual_value!=expected_value)
 		{
-			System.out.println("testcase passed");
+			
 			Assert.assertTrue(true);
 		}
 
