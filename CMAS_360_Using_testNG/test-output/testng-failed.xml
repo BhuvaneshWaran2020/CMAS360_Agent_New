@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Cmas_360_Agent]">
-  <test thread-count="5" name="Check_testcases(failed)">
+  <test thread-count="5" name="InvalidInputsToCreateNewCompany(failed)">
     <classes>
       <class name="testCases.TC_002">
         <methods>
@@ -12,5 +12,5 @@
         </methods>
       </class> <!-- testCases.TC_002 -->
     </classes>
-  </test> <!-- Check_testcases(failed) -->
+  </test> <!-- InvalidInputsToCreateNewCompany(failed) -->
 </suite> <!-- Failed suite [Cmas_360_Agent] -->

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Cmas_360_Agent" duration-ms="65991" started-at="2020-11-02T09:48:19Z" finished-at="2020-11-02T09:49:25Z">
+  <suite name="Cmas_360_Agent" duration-ms="79631" started-at="2020-11-04T10:28:56Z" finished-at="2020-11-04T10:30:16Z">
     <groups>
     </groups>
-    <test name="save_testcases" duration-ms="35516" started-at="2020-11-02T09:48:19Z" finished-at="2020-11-02T09:48:54Z">
+    <test name="ValidInputsToCreateNewCompany" duration-ms="34648" started-at="2020-11-04T10:28:56Z" finished-at="2020-11-04T10:29:31Z">
       <class name="testCases.TC_001">
-        <test-method status="PASS" signature="login()[pri:0, instance:testCases.TC_001@59f99ea]" name="login" duration-ms="35492" started-at="2020-11-02T09:48:19Z" finished-at="2020-11-02T09:48:54Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:testCases.TC_001@59f99ea]" name="login" duration-ms="34617" started-at="2020-11-04T10:28:56Z" finished-at="2020-11-04T10:29:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:testCases.TC_001@59f99ea]" name="teardown" is-config="true" duration-ms="6" started-at="2020-11-02T09:48:54Z" finished-at="2020-11-02T09:48:54Z">
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:testCases.TC_001@59f99ea]" name="teardown" is-config="true" duration-ms="13" started-at="2020-11-04T10:29:31Z" finished-at="2020-11-04T10:29:31Z">
           <params>
             <param index="0">
               <value>
@@ -23,10 +23,10 @@
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testCases.TC_001 -->
-    </test> <!-- save_testcases -->
-    <test name="Check_testcases" duration-ms="15285" started-at="2020-11-02T09:48:54Z" finished-at="2020-11-02T09:49:10Z">
+    </test> <!-- ValidInputsToCreateNewCompany -->
+    <test name="InvalidInputsToCreateNewCompany" duration-ms="15482" started-at="2020-11-04T10:29:31Z" finished-at="2020-11-04T10:29:46Z">
       <class name="testCases.TC_002">
-        <test-method status="FAIL" signature="failedtest()[pri:0, instance:testCases.TC_002@13deb50e]" name="failedtest" duration-ms="13985" started-at="2020-11-02T09:48:54Z" finished-at="2020-11-02T09:49:08Z">
+        <test-method status="FAIL" signature="failedtest()[pri:0, instance:testCases.TC_002@13deb50e]" name="failedtest" duration-ms="14131" started-at="2020-11-04T10:29:31Z" finished-at="2020-11-04T10:29:45Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [aran] but found [waran]]]>
@@ -71,7 +71,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failedtest -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:testCases.TC_002@13deb50e]" name="teardown" is-config="true" duration-ms="1296" started-at="2020-11-02T09:49:08Z" finished-at="2020-11-02T09:49:10Z">
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:testCases.TC_002@13deb50e]" name="teardown" is-config="true" duration-ms="1347" started-at="2020-11-04T10:29:45Z" finished-at="2020-11-04T10:29:46Z">
           <params>
             <param index="0">
               <value>
@@ -83,33 +83,52 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- testCases.TC_002 -->
-    </test> <!-- Check_testcases -->
-    <test name="cancel_testcases" duration-ms="15165" started-at="2020-11-02T09:49:10Z" finished-at="2020-11-02T09:49:25Z">
+    </test> <!-- InvalidInputsToCreateNewCompany -->
+    <test name="GivenValidInputsToCancel" duration-ms="14958" started-at="2020-11-04T10:29:47Z" finished-at="2020-11-04T10:30:01Z">
       <class name="testCases.TC_003">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testCases.TC_003@5f341870]" name="launchBrowser" is-config="true" duration-ms="9545" started-at="2020-11-02T09:48:09Z" finished-at="2020-11-02T09:48:19Z">
+        <test-method status="PASS" signature="ValidCancel()[pri:0, instance:testCases.TC_003@5f341870]" name="ValidCancel" duration-ms="14955" started-at="2020-11-04T10:29:47Z" finished-at="2020-11-04T10:30:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="failedtest()[pri:0, instance:testCases.TC_003@5f341870]" name="failedtest" duration-ms="15162" started-at="2020-11-02T09:49:10Z" finished-at="2020-11-02T09:49:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- failedtest -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:testCases.TC_003@5f341870]" name="teardown" is-config="true" duration-ms="1" started-at="2020-11-02T09:49:25Z" finished-at="2020-11-02T09:49:25Z">
+        </test-method> <!-- ValidCancel -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:testCases.TC_003@5f341870]" name="teardown" is-config="true" duration-ms="1" started-at="2020-11-04T10:30:01Z" finished-at="2020-11-04T10:30:01Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=failedtest status=SUCCESS method=TC_003.failedtest()[pri:0, instance:testCases.TC_003@5f341870] output={null}]]]>
+                <![CDATA[[TestResult name=ValidCancel status=SUCCESS method=TC_003.ValidCancel()[pri:0, instance:testCases.TC_003@5f341870] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="close()[pri:0, instance:testCases.TC_003@5f341870]" name="close" is-config="true" duration-ms="199" started-at="2020-11-02T09:49:25Z" finished-at="2020-11-02T09:49:25Z">
+      </class> <!-- testCases.TC_003 -->
+    </test> <!-- GivenValidInputsToCancel -->
+    <test name="GivenInvalidInputsToCancel" duration-ms="14511" started-at="2020-11-04T10:30:01Z" finished-at="2020-11-04T10:30:16Z">
+      <class name="testCases.TC_004">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testCases.TC_004@59ec2012]" name="launchBrowser" is-config="true" duration-ms="10366" started-at="2020-11-04T10:28:46Z" finished-at="2020-11-04T10:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="InvalidCancel()[pri:0, instance:testCases.TC_004@59ec2012]" name="InvalidCancel" duration-ms="14507" started-at="2020-11-04T10:30:01Z" finished-at="2020-11-04T10:30:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidCancel -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:testCases.TC_004@59ec2012]" name="teardown" is-config="true" duration-ms="2" started-at="2020-11-04T10:30:16Z" finished-at="2020-11-04T10:30:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=InvalidCancel status=SUCCESS method=TC_004.InvalidCancel()[pri:0, instance:testCases.TC_004@59ec2012] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="close()[pri:0, instance:testCases.TC_004@59ec2012]" name="close" is-config="true" duration-ms="230" started-at="2020-11-04T10:30:16Z" finished-at="2020-11-04T10:30:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-      </class> <!-- testCases.TC_003 -->
-    </test> <!-- cancel_testcases -->
+      </class> <!-- testCases.TC_004 -->
+    </test> <!-- GivenInvalidInputsToCancel -->
   </suite> <!-- Cmas_360_Agent -->
 </testng-results>

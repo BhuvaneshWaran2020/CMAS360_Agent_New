@@ -25,7 +25,7 @@ public class TC_001 extends Base_class
 	
 	{
 		// Log in 
-		test=extent.createTest("TC_001");
+		test=extent.createTest("ValidInputsToCreateNewCompany");
 		PageFactory.initElements(driver, Login_Page_Objects.class);
 		Login_Page_Objects.userrname.sendKeys(properties.getProperty("username"));
 		Login_Page_Objects.password.sendKeys(properties.getProperty("password"));

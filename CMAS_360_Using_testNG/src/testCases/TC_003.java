@@ -21,9 +21,9 @@ public class TC_003 extends Base_class
 
 
 	@Test
-	public void failedtest() throws InterruptedException
+	public void ValidCancel() throws InterruptedException
 	{
-		test=extent.createTest("TC_003");		
+		test=extent.createTest("GivenValidInputsToCancel");		
 		PageFactory.initElements(driver, TC001_Page_Objects.class);
 
 		TC001_Page_Objects.SetUp.click();
@@ -54,7 +54,7 @@ public class TC_003 extends Base_class
 		Thread.sleep(5000);
 
 		String actual_value=driver.findElement(By.xpath("//*[@id='tblcompany']/tbody/tr[*]/td[text()='bhuvanesh']")).getText();
-		System.out.println(actual_value);
+		
 		
 		String expected_value="Rndsoft";
 		

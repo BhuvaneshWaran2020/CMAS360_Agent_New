@@ -2,14 +2,14 @@
 
 <suite name="Cmas_360_Agent">
 
-	<test name="save_testcases">
+	<test name="ValidInputsToCreateNewCompany">
 		<classes>
 			<class name="testCases.TC_001"></class>
 		</classes>
 	</test>
 
 
-	<test name="Check_testcases">
+	<test name="InvalidInputsToCreateNewCompany">
 		<classes>
 			<class name="testCases.TC_002"></class>
 		</classes>
@@ -18,9 +18,18 @@
 
 	</test>
 
-	<test name="cancel_testcases">
+	<test name="GivenValidInputsToCancel">
 		<classes>
 			<class name="testCases.TC_003"></class>
+		</classes>
+
+
+
+	</test>
+	
+	<test name="GivenInvalidInputsToCancel">
+		<classes>
+			<class name="testCases.TC_004"></class>
 		</classes>
 
 
