@@ -19,19 +19,19 @@ public class TC_002 extends Base_class
 	@Test
 	public void failedtest() throws InterruptedException
 	{			
-		test=extent.createTest("InvalidInputsToCreateNewCompany");		
+		test=extent.createTest("FailedTestCase");		
 		PageFactory.initElements(driver, TC001_Page_Objects.class);
 		
 		TC001_Page_Objects.SetUp.click();
 		TC001_Page_Objects.Company.click();
 		TC001_Page_Objects.New.click();
-		TC001_Page_Objects.AgencyName.sendKeys("waran");
-		TC001_Page_Objects.ABN_No.sendKeys("1998");
-		TC001_Page_Objects.Address.sendKeys("3, tirupur");
-		TC001_Page_Objects.Contact_Email.sendKeys("bhuvaneh@gmail.com");
-		TC001_Page_Objects.Enquiry_Email.sendKeys("bhuvaneh@gmail.com");
+		TC001_Page_Objects.AgencyName.sendKeys("Rnd soft");
+		TC001_Page_Objects.ABN_No.sendKeys("2234");
+		TC001_Page_Objects.Address.sendKeys("3,street");
+		TC001_Page_Objects.Contact_Email.sendKeys("Rnd@gmail.com");
+		TC001_Page_Objects.Enquiry_Email.sendKeys("Rnd@gmail.com");
 		TC001_Page_Objects.Contact_Person.sendKeys("bhuvaneh");
-		TC001_Page_Objects.Telephone.sendKeys("9865328598");
+		TC001_Page_Objects.Telephone.sendKeys("8956232214");
 		
 		
 		
@@ -63,7 +63,7 @@ public class TC_002 extends Base_class
 		//*[@id='tblcompany']/tbody/tr[*]/td[text()='bhuvanesh']
 */		
 		System.out.println(Actual_value);
-		String Expected_value="aran";
+		String Expected_value="nd soft";
 		
 		Assert.assertEquals(Actual_value, Expected_value);
 		

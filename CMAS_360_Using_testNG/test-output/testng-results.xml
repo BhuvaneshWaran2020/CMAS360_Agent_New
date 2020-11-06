@@ -1,45 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+<testng-results skipped="0" failed="4" ignored="0" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Cmas_360_Agent" duration-ms="79631" started-at="2020-11-04T10:28:56Z" finished-at="2020-11-04T10:30:16Z">
+  <suite name="Cmas_360_Agent" duration-ms="290425" started-at="2020-11-06T14:14:49Z" finished-at="2020-11-06T14:19:40Z">
     <groups>
     </groups>
-    <test name="ValidInputsToCreateNewCompany" duration-ms="34648" started-at="2020-11-04T10:28:56Z" finished-at="2020-11-04T10:29:31Z">
+    <test name="ValidInputsToCreateNewCompany" duration-ms="283857" started-at="2020-11-06T14:14:49Z" finished-at="2020-11-06T14:19:33Z">
       <class name="testCases.TC_001">
-        <test-method status="PASS" signature="login()[pri:0, instance:testCases.TC_001@59f99ea]" name="login" duration-ms="34617" started-at="2020-11-04T10:28:56Z" finished-at="2020-11-04T10:29:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:testCases.TC_001@59f99ea]" name="teardown" is-config="true" duration-ms="13" started-at="2020-11-04T10:29:31Z" finished-at="2020-11-04T10:29:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=login status=SUCCESS method=TC_001.login()[pri:0, instance:testCases.TC_001@59f99ea] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.TC_001 -->
-    </test> <!-- ValidInputsToCreateNewCompany -->
-    <test name="InvalidInputsToCreateNewCompany" duration-ms="15482" started-at="2020-11-04T10:29:31Z" finished-at="2020-11-04T10:29:46Z">
-      <class name="testCases.TC_002">
-        <test-method status="FAIL" signature="failedtest()[pri:0, instance:testCases.TC_002@13deb50e]" name="failedtest" duration-ms="14131" started-at="2020-11-04T10:29:31Z" finished-at="2020-11-04T10:29:45Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="login()[pri:0, instance:testCases.TC_001@59f99ea]" name="login" duration-ms="150832" started-at="2020-11-06T14:14:49Z" finished-at="2020-11-06T14:17:20Z">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[expected [aran] but found [waran]]]>
+              <![CDATA[timeout: Timed out receiving message from renderer: 120.000
+  (Session info: chrome=86.0.4240.183)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'CP1059', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\RNDSOF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52670}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5a039337e7f89cd7d05fa6f1284fc800
+*** Element info: {Using=xpath, value=//*[@id='js-nav-menu']/li[2]/a/span}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [aran] but found [waran]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at testCases.TC_002.failedtest(TC_002.java:68)
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 120.000
+  (Session info: chrome=86.0.4240.183)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'CP1059', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\RNDSOF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52670}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5a039337e7f89cd7d05fa6f1284fc800
+*** Element info: {Using=xpath, value=//*[@id='js-nav-menu']/li[2]/a/span}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy10.click(Unknown Source)
+at testCases.TC_001.login(TC_001.java:37)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -67,11 +73,95 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:testCases.TC_001@59f99ea]" name="teardown" is-config="true" duration-ms="133005" started-at="2020-11-06T14:17:20Z" finished-at="2020-11-06T14:19:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=FAILURE method=TC_001.login()[pri:0, instance:testCases.TC_001@59f99ea] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.TC_001 -->
+    </test> <!-- ValidInputsToCreateNewCompany -->
+    <test name="InvalidInputsToCreateNewCompany" duration-ms="2254" started-at="2020-11-06T14:19:33Z" finished-at="2020-11-06T14:19:35Z">
+      <class name="testCases.TC_002">
+        <test-method status="FAIL" signature="failedtest()[pri:0, instance:testCases.TC_002@13deb50e]" name="failedtest" duration-ms="1190" started-at="2020-11-06T14:19:33Z" finished-at="2020-11-06T14:19:34Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span class="nav-link-text" data-i18n="nav.theme_settings">...</span> is not clickable at point (151, 357). Other element would receive the click: <div class="loading" id="loader">...</div>
+  (Session info: chrome=86.0.4240.183)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'CP1059', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\RNDSOF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52670}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5a039337e7f89cd7d05fa6f1284fc800]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="nav-link-text" data-i18n="nav.theme_settings">...</span> is not clickable at point (151, 357). Other element would receive the click: <div class="loading" id="loader">...</div>
+  (Session info: chrome=86.0.4240.183)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'CP1059', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\RNDSOF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52670}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5a039337e7f89cd7d05fa6f1284fc800
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy10.click(Unknown Source)
+at testCases.TC_002.failedtest(TC_002.java:25)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failedtest -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:testCases.TC_002@13deb50e]" name="teardown" is-config="true" duration-ms="1347" started-at="2020-11-04T10:29:45Z" finished-at="2020-11-04T10:29:46Z">
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:testCases.TC_002@13deb50e]" name="teardown" is-config="true" duration-ms="1047" started-at="2020-11-06T14:19:34Z" finished-at="2020-11-06T14:19:35Z">
           <params>
             <param index="0">
               <value>
@@ -84,17 +174,82 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- teardown -->
       </class> <!-- testCases.TC_002 -->
     </test> <!-- InvalidInputsToCreateNewCompany -->
-    <test name="GivenValidInputsToCancel" duration-ms="14958" started-at="2020-11-04T10:29:47Z" finished-at="2020-11-04T10:30:01Z">
+    <test name="GivenValidInputsToCancel" duration-ms="2113" started-at="2020-11-06T14:19:35Z" finished-at="2020-11-06T14:19:38Z">
       <class name="testCases.TC_003">
-        <test-method status="PASS" signature="ValidCancel()[pri:0, instance:testCases.TC_003@5f341870]" name="ValidCancel" duration-ms="14955" started-at="2020-11-04T10:29:47Z" finished-at="2020-11-04T10:30:01Z">
+        <test-method status="FAIL" signature="ValidCancel()[pri:0, instance:testCases.TC_003@5f341870]" name="ValidCancel" duration-ms="1121" started-at="2020-11-06T14:19:35Z" finished-at="2020-11-06T14:19:37Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span class="nav-link-text" data-i18n="nav.theme_settings">...</span> is not clickable at point (151, 357). Other element would receive the click: <div class="loading" id="loader">...</div>
+  (Session info: chrome=86.0.4240.183)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'CP1059', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\RNDSOF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52670}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5a039337e7f89cd7d05fa6f1284fc800]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="nav-link-text" data-i18n="nav.theme_settings">...</span> is not clickable at point (151, 357). Other element would receive the click: <div class="loading" id="loader">...</div>
+  (Session info: chrome=86.0.4240.183)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'CP1059', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\RNDSOF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52670}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5a039337e7f89cd7d05fa6f1284fc800
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy10.click(Unknown Source)
+at testCases.TC_003.ValidCancel(TC_003.java:29)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidCancel -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:testCases.TC_003@5f341870]" name="teardown" is-config="true" duration-ms="1" started-at="2020-11-04T10:30:01Z" finished-at="2020-11-04T10:30:01Z">
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:testCases.TC_003@5f341870]" name="teardown" is-config="true" duration-ms="981" started-at="2020-11-06T14:19:37Z" finished-at="2020-11-06T14:19:38Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ValidCancel status=SUCCESS method=TC_003.ValidCancel()[pri:0, instance:testCases.TC_003@5f341870] output={null}]]]>
+                <![CDATA[[TestResult name=ValidCancel status=FAILURE method=TC_003.ValidCancel()[pri:0, instance:testCases.TC_003@5f341870] output={null}]]]>
               </value>
             </param>
           </params>
@@ -103,28 +258,93 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- teardown -->
       </class> <!-- testCases.TC_003 -->
     </test> <!-- GivenValidInputsToCancel -->
-    <test name="GivenInvalidInputsToCancel" duration-ms="14511" started-at="2020-11-04T10:30:01Z" finished-at="2020-11-04T10:30:16Z">
+    <test name="GivenInvalidInputsToCancel" duration-ms="2112" started-at="2020-11-06T14:19:38Z" finished-at="2020-11-06T14:19:40Z">
       <class name="testCases.TC_004">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testCases.TC_004@59ec2012]" name="launchBrowser" is-config="true" duration-ms="10366" started-at="2020-11-04T10:28:46Z" finished-at="2020-11-04T10:28:56Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:testCases.TC_004@59ec2012]" name="launchBrowser" is-config="true" duration-ms="38089" started-at="2020-11-06T14:14:11Z" finished-at="2020-11-06T14:14:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="InvalidCancel()[pri:0, instance:testCases.TC_004@59ec2012]" name="InvalidCancel" duration-ms="14507" started-at="2020-11-04T10:30:01Z" finished-at="2020-11-04T10:30:16Z">
+        <test-method status="FAIL" signature="InvalidCancel()[pri:0, instance:testCases.TC_004@59ec2012]" name="InvalidCancel" duration-ms="1092" started-at="2020-11-06T14:19:38Z" finished-at="2020-11-06T14:19:39Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span class="nav-link-text" data-i18n="nav.theme_settings">...</span> is not clickable at point (151, 357). Other element would receive the click: <div class="loading" id="loader">...</div>
+  (Session info: chrome=86.0.4240.183)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'CP1059', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\RNDSOF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52670}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5a039337e7f89cd7d05fa6f1284fc800]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="nav-link-text" data-i18n="nav.theme_settings">...</span> is not clickable at point (151, 357). Other element would receive the click: <div class="loading" id="loader">...</div>
+  (Session info: chrome=86.0.4240.183)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'CP1059', ip: '192.168.43.116', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\RNDSOF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52670}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5a039337e7f89cd7d05fa6f1284fc800
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy10.click(Unknown Source)
+at testCases.TC_004.InvalidCancel(TC_004.java:24)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidCancel -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:testCases.TC_004@59ec2012]" name="teardown" is-config="true" duration-ms="2" started-at="2020-11-04T10:30:16Z" finished-at="2020-11-04T10:30:16Z">
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:testCases.TC_004@59ec2012]" name="teardown" is-config="true" duration-ms="1009" started-at="2020-11-06T14:19:39Z" finished-at="2020-11-06T14:19:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=InvalidCancel status=SUCCESS method=TC_004.InvalidCancel()[pri:0, instance:testCases.TC_004@59ec2012] output={null}]]]>
+                <![CDATA[[TestResult name=InvalidCancel status=FAILURE method=TC_004.InvalidCancel()[pri:0, instance:testCases.TC_004@59ec2012] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="close()[pri:0, instance:testCases.TC_004@59ec2012]" name="close" is-config="true" duration-ms="230" started-at="2020-11-04T10:30:16Z" finished-at="2020-11-04T10:30:16Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:testCases.TC_004@59ec2012]" name="close" is-config="true" duration-ms="339" started-at="2020-11-06T14:19:40Z" finished-at="2020-11-06T14:19:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

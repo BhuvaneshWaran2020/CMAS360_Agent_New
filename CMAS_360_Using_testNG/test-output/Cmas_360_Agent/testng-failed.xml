@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Cmas_360_Agent]">
+  <test thread-count="5" name="ValidInputsToCreateNewCompany(failed)">
+    <classes>
+      <class name="testCases.TC_001">
+        <methods>
+          <include name="close"/>
+          <include name="teardown"/>
+          <include name="login"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testCases.TC_001 -->
+    </classes>
+  </test> <!-- ValidInputsToCreateNewCompany(failed) -->
   <test thread-count="5" name="InvalidInputsToCreateNewCompany(failed)">
     <classes>
       <class name="testCases.TC_002">
@@ -13,4 +25,28 @@
       </class> <!-- testCases.TC_002 -->
     </classes>
   </test> <!-- InvalidInputsToCreateNewCompany(failed) -->
+  <test thread-count="5" name="GivenValidInputsToCancel(failed)">
+    <classes>
+      <class name="testCases.TC_003">
+        <methods>
+          <include name="ValidCancel"/>
+          <include name="close"/>
+          <include name="teardown"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- testCases.TC_003 -->
+    </classes>
+  </test> <!-- GivenValidInputsToCancel(failed) -->
+  <test thread-count="5" name="GivenInvalidInputsToCancel(failed)">
+    <classes>
+      <class name="testCases.TC_004">
+        <methods>
+          <include name="close"/>
+          <include name="teardown"/>
+          <include name="launchBrowser"/>
+          <include name="InvalidCancel"/>
+        </methods>
+      </class> <!-- testCases.TC_004 -->
+    </classes>
+  </test> <!-- GivenInvalidInputsToCancel(failed) -->
 </suite> <!-- Failed suite [Cmas_360_Agent] -->

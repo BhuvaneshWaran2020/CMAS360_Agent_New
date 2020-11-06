@@ -37,13 +37,13 @@ public class TC_001 extends Base_class
 		TC001_Page_Objects.SetUp.click();
 		TC001_Page_Objects.Company.click();
 		TC001_Page_Objects.New.click();
-		TC001_Page_Objects.AgencyName.sendKeys("bhuvanesh");
-		TC001_Page_Objects.ABN_No.sendKeys("1997");
-		TC001_Page_Objects.Address.sendKeys("3, tirupur");
-		TC001_Page_Objects.Contact_Email.sendKeys("bhuvanesh@gmail.com");
-		TC001_Page_Objects.Enquiry_Email.sendKeys("bhuvanesh@gmail.com");
+		TC001_Page_Objects.AgencyName.sendKeys("Rnd soft");
+		TC001_Page_Objects.ABN_No.sendKeys("2233");
+		TC001_Page_Objects.Address.sendKeys(" 3,street");
+		TC001_Page_Objects.Contact_Email.sendKeys("Rnd@gmail.com");
+		TC001_Page_Objects.Enquiry_Email.sendKeys("Rnd@gmail.com");
 		TC001_Page_Objects.Contact_Person.sendKeys("bhuvanesh");
-		TC001_Page_Objects.Telephone.sendKeys("9865326598");
+		TC001_Page_Objects.Telephone.sendKeys("8956232214");
 		
 		
 		
@@ -77,7 +77,7 @@ public class TC_001 extends Base_class
 */		
 		System.out.println(Actual_value);
 		
-		String Expected_value="bhuvanesh";
+		String Expected_value="Rnd soft";
 		
 		Assert.assertEquals(Actual_value, Expected_value); 
 		
