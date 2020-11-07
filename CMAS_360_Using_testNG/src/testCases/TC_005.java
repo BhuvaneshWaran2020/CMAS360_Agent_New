@@ -14,7 +14,7 @@ import common_Functions.Base_class;
 
 public class TC_005 extends Base_class
 {
-	
+
 	@Test
 	public void EmptyValidationToSave() throws InterruptedException
 	{
@@ -43,46 +43,28 @@ public class TC_005 extends Base_class
 			e.printStackTrace();
 		}
 
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 
-		TC001_Page_Objects.Cancel_Button.click();
-		Thread.sleep(5000);
+		TC001_Page_Objects.Save_Button.click();
 
-		String actual_value=driver.findElement(By.xpath("//*[@id='tblcompany']/tbody/tr[*]/td[text()='bhuvanesh']")).getText();
-		
-		
-		String expected_value="";
-		
-		if(actual_value==expected_value)
-		{
-			System.out.println("testcase failed");
-			Assert.assertTrue(false);
-		}else if(actual_value!=expected_value)
-		{
-			
-			Assert.assertTrue(true);
-		}
+		Thread.sleep(3000);
 
-		
+		TC001_Page_Objects.Ok.click();
 
+		Thread.sleep(3000);
 
+		String Actual_value=driver.findElement(By.xpath("//*[@id='tblcompany']/tbody/tr[1]/td[2]")).getText();
 
+		System.out.println(Actual_value);
 
+		String Expected_value="";
 
-
-
-
-
-
-
-
-
-
+		Assert.assertEquals(Actual_value, Expected_value); 
 
 		driver.switchTo().defaultContent();
 	}
-		
-	}
-	
+
+}
+
 
 

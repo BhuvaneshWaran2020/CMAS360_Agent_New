@@ -51,7 +51,7 @@ public class TC_004 extends Base_class
 		String actual_value=driver.findElement(By.xpath("//*[@id='tblcompany']/tbody/tr[*]/td[text()='bhuvanesh']")).getText();
 		
 		
-		String expected_value="@@@Rndsoft";
+		String expected_value="@#$@#$@Rndsoft";
 		
 		if(actual_value==expected_value)
 		{
