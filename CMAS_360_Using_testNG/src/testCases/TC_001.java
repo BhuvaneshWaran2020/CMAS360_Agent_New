@@ -11,7 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import Page_Objects.Login_Page_Objects;
-import Page_Objects.TC001_Page_Objects;
+import Page_Objects.Setup_Company_PageObjects;
 import common_Functions.Base_class;
 
 public class TC_001 extends Base_class
@@ -32,18 +32,18 @@ public class TC_001 extends Base_class
 		Login_Page_Objects.submitButton.click();
 
 
-		PageFactory.initElements(driver, TC001_Page_Objects.class);
+		PageFactory.initElements(driver, Setup_Company_PageObjects.class);
 
-		TC001_Page_Objects.SetUp.click();
-		TC001_Page_Objects.Company.click();
-		TC001_Page_Objects.New.click();
-		TC001_Page_Objects.AgencyName.sendKeys("Rnd soft");
-		TC001_Page_Objects.ABN_No.sendKeys("2233");
-		TC001_Page_Objects.Address.sendKeys(" 3,street");
-		TC001_Page_Objects.Contact_Email.sendKeys("Rnd@gmail.com");
-		TC001_Page_Objects.Enquiry_Email.sendKeys("Rnd@gmail.com");
-		TC001_Page_Objects.Contact_Person.sendKeys("bhuvanesh");
-		TC001_Page_Objects.Telephone.sendKeys("8956232214");
+		Setup_Company_PageObjects.SetUp.click();
+		Setup_Company_PageObjects.Company.click();
+		Setup_Company_PageObjects.New.click();
+		Setup_Company_PageObjects.AgencyName.sendKeys("Rnd soft");
+		Setup_Company_PageObjects.ABN_No.sendKeys("2233");
+		Setup_Company_PageObjects.Address.sendKeys(" 3,street");
+		Setup_Company_PageObjects.Contact_Email.sendKeys("Rnd@gmail.com");
+		Setup_Company_PageObjects.Enquiry_Email.sendKeys("Rnd@gmail.com");
+		Setup_Company_PageObjects.Contact_Person.sendKeys("bhuvanesh");
+		Setup_Company_PageObjects.Telephone.sendKeys("8956232214");
 
 
 
@@ -59,11 +59,11 @@ public class TC_001 extends Base_class
 
 		Thread.sleep(3000);
 
-		TC001_Page_Objects.Save_Button.click();
+		Setup_Company_PageObjects.Save_Button.click();
 
 		Thread.sleep(3000);
 
-		TC001_Page_Objects.Ok.click();
+		Setup_Company_PageObjects.Ok.click();
 
 		Thread.sleep(3000);
 
