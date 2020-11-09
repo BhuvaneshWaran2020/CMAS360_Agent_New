@@ -53,13 +53,9 @@ public class TC_005 extends Base_class
 
 		Thread.sleep(3000);
 
-		String Actual_value=driver.findElement(By.xpath("//*[@id='tblcompany']/tbody/tr[1]/td[2]")).getText();
+		
 
-		System.out.println(Actual_value);
-
-		String Expected_value="";
-
-		Assert.assertEquals(Actual_value, Expected_value); 
+		 
 
 		driver.switchTo().defaultContent();
 	}

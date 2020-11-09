@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Cmas_360_Agent">
-                    <span class="test-stats">4 tests</span>
+                    <span class="test-stats">7 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 4 failed,   </span>
+                    <span class="method-stats">7 methods, 3 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,12 +102,12 @@
                     <div class="method-list-content failed suite-Cmas_360_Agent">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Cmas_360_Agent" title="testCases.TC_004" hash-for-method="InvalidCancel">InvalidCancel</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Cmas_360_Agent" title="testCases.TC_005" hash-for-method="EmptyValidationToSave">EmptyValidationToSave</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Cmas_360_Agent" title="testCases.TC_003" hash-for-method="ValidCancel">ValidCancel</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Cmas_360_Agent" title="testCases.TC_007" hash-for-method="emptyValidationToCancel">emptyValidationToCancel</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -115,12 +115,36 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Cmas_360_Agent" title="testCases.TC_002" hash-for-method="failedtest">failedtest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                    </div> <!-- method-list-content failed suite-Cmas_360_Agent -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Cmas_360_Agent" class="hide-methods passed suite-Cmas_360_Agent"> (hide)</a> <!-- hide-methods passed suite-Cmas_360_Agent -->
+                      <a href="#" panel-name="suite-Cmas_360_Agent" class="show-methods passed suite-Cmas_360_Agent"> (show)</a> <!-- show-methods passed suite-Cmas_360_Agent -->
+                    </span>
+                    <div class="method-list-content passed suite-Cmas_360_Agent">
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Cmas_360_Agent" title="testCases.TC_004" hash-for-method="InvalidCancel">InvalidCancel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Cmas_360_Agent" title="testCases.TC_003" hash-for-method="ValidCancel">ValidCancel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Cmas_360_Agent" title="testCases.TC_006" hash-for-method="illegelValidationToSave">illegelValidationToSave</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Cmas_360_Agent" title="testCases.TC_001" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Cmas_360_Agent -->
+                    </div> <!-- method-list-content passed suite-Cmas_360_Agent -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -135,22 +159,42 @@
           <div class="suite-Cmas_360_Agent-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testCases.TC_001</span>
+              <span class="class-name">testCases.TC_002</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="login">
-                  </a> <!-- login -->
-                  <span class="method-name">login</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 120.000
+                  <a name="failedtest">
+                  </a> <!-- failedtest -->
+                  <span class="method-name">failedtest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [nd soft] but found [Rnd soft]
+	at testCases.TC_002.failedtest(TC_002.java:68)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Cmas_360_Agent-class-failed -->
+          <div class="suite-Cmas_360_Agent-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.TC_005</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="EmptyValidationToSave">
+                  </a> <!-- EmptyValidationToSave -->
+                  <span class="method-name">EmptyValidationToSave</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[7]/div[7]/div/button&quot;}
   (Session info: chrome=86.0.4240.183)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
 System info: host: &apos;CP1059&apos;, ip: &apos;192.168.43.116&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\RNDSOF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52670}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5a039337e7f89cd7d05fa6f1284fc800
-*** Element info: {Using=xpath, value=//*[@id=&apos;js-nav-menu&apos;]/li[2]/a/span}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\RNDSOF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57074}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d08b2a8e84662116a917e1d0409f4c2f
+*** Element info: {Using=xpath, value=/html/body/div[7]/div[7]/div/button}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -164,7 +208,7 @@ Session ID: 5a039337e7f89cd7d05fa6f1284fc800
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at testCases.TC_001.login(TC_001.java:37)
+	at testCases.TC_005.EmptyValidationToSave(TC_005.java:52)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -174,41 +218,58 @@ Session ID: 5a039337e7f89cd7d05fa6f1284fc800
           <div class="suite-Cmas_360_Agent-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testCases.TC_002</span>
+              <span class="class-name">testCases.TC_007</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="failedtest">
-                  </a> <!-- failedtest -->
-                  <span class="method-name">failedtest</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;nav-link-text&quot; data-i18n=&quot;nav.theme_settings&quot;&gt;...&lt;/span&gt; is not clickable at point (151, 357). Other element would receive the click: &lt;div class=&quot;loading&quot; id=&quot;loader&quot;&gt;...&lt;/div&gt;
+                  <a name="emptyValidationToCancel">
+                  </a> <!-- emptyValidationToCancel -->
+                  <span class="method-name">emptyValidationToCancel</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;tblcompany&apos;]/tbody/tr[*]/td[text()=&apos;&apos;]&quot;}
   (Session info: chrome=86.0.4240.183)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
 System info: host: &apos;CP1059&apos;, ip: &apos;192.168.43.116&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\RNDSOF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52670}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5a039337e7f89cd7d05fa6f1284fc800
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\RNDSOF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57074}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d08b2a8e84662116a917e1d0409f4c2f
+*** Element info: {Using=xpath, value=//*[@id=&apos;tblcompany&apos;]/tbody/tr[*]/td[text()=&apos;&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at testCases.TC_002.failedtest(TC_002.java:25)
-... Removed 33 stack frames
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at testCases.TC_007.emptyValidationToCancel(TC_007.java:51)
+... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Cmas_360_Agent-class-failed -->
-          <div class="suite-Cmas_360_Agent-class-failed">
+          <div class="suite-Cmas_360_Agent-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC_001</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Cmas_360_Agent-class-passed -->
+          <div class="suite-Cmas_360_Agent-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">testCases.TC_003</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -217,33 +278,13 @@ Session ID: 5a039337e7f89cd7d05fa6f1284fc800
                   <a name="ValidCancel">
                   </a> <!-- ValidCancel -->
                   <span class="method-name">ValidCancel</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;nav-link-text&quot; data-i18n=&quot;nav.theme_settings&quot;&gt;...&lt;/span&gt; is not clickable at point (151, 357). Other element would receive the click: &lt;div class=&quot;loading&quot; id=&quot;loader&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=86.0.4240.183)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;CP1059&apos;, ip: &apos;192.168.43.116&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\RNDSOF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52670}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5a039337e7f89cd7d05fa6f1284fc800
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at testCases.TC_003.ValidCancel(TC_003.java:29)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Cmas_360_Agent-class-failed -->
-          <div class="suite-Cmas_360_Agent-class-failed">
+          </div> <!-- suite-Cmas_360_Agent-class-passed -->
+          <div class="suite-Cmas_360_Agent-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">testCases.TC_004</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -252,30 +293,25 @@ Session ID: 5a039337e7f89cd7d05fa6f1284fc800
                   <a name="InvalidCancel">
                   </a> <!-- InvalidCancel -->
                   <span class="method-name">InvalidCancel</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span class=&quot;nav-link-text&quot; data-i18n=&quot;nav.theme_settings&quot;&gt;...&lt;/span&gt; is not clickable at point (151, 357). Other element would receive the click: &lt;div class=&quot;loading&quot; id=&quot;loader&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=86.0.4240.183)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;CP1059&apos;, ip: &apos;192.168.43.116&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.183, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\RNDSOF~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52670}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5a039337e7f89cd7d05fa6f1284fc800
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy10.click(Unknown Source)
-	at testCases.TC_004.InvalidCancel(TC_004.java:24)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Cmas_360_Agent-class-failed -->
+          </div> <!-- suite-Cmas_360_Agent-class-passed -->
+          <div class="suite-Cmas_360_Agent-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC_006</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="illegelValidationToSave">
+                  </a> <!-- illegelValidationToSave -->
+                  <span class="method-name">illegelValidationToSave</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Cmas_360_Agent-class-passed -->
         </div> <!-- panel Cmas_360_Agent -->
         <div panel-name="test-xml-Cmas_360_Agent" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -306,6 +342,21 @@ Session ID: 5a039337e7f89cd7d05fa6f1284fc800
       &lt;class name=&quot;testCases.TC_004&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- GivenInvalidInputsToCancel --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;EmptyValidationToSave&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.TC_005&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- EmptyValidationToSave --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;illegelValidationToSave&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.TC_006&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- illegelValidationToSave --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;emptyValidationToCancel&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.TC_007&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- emptyValidationToCancel --&gt;
 &lt;/suite&gt; &lt;!-- Cmas_360_Agent --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -327,6 +378,15 @@ Session ID: 5a039337e7f89cd7d05fa6f1284fc800
               </li>
               <li>
                 <span class="test-name">GivenInvalidInputsToCancel (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">EmptyValidationToSave (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">illegelValidationToSave (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">emptyValidationToCancel (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -352,23 +412,35 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'login')
-data.setCell(0, 2, 'testCases.TC_001')
-data.setCell(0, 3, 150832);
+data.setCell(0, 1, 'emptyValidationToCancel')
+data.setCell(0, 2, 'testCases.TC_007')
+data.setCell(0, 3, 44033);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'failedtest')
-data.setCell(1, 2, 'testCases.TC_002')
-data.setCell(1, 3, 1190);
+data.setCell(1, 1, 'EmptyValidationToSave')
+data.setCell(1, 2, 'testCases.TC_005')
+data.setCell(1, 3, 40254);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'ValidCancel')
-data.setCell(2, 2, 'testCases.TC_003')
-data.setCell(2, 3, 1121);
+data.setCell(2, 1, 'login')
+data.setCell(2, 2, 'testCases.TC_001')
+data.setCell(2, 3, 32344);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'InvalidCancel')
 data.setCell(3, 2, 'testCases.TC_004')
-data.setCell(3, 3, 1092);
+data.setCell(3, 3, 15453);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'ValidCancel')
+data.setCell(4, 2, 'testCases.TC_003')
+data.setCell(4, 3, 14343);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'illegelValidationToSave')
+data.setCell(5, 2, 'testCases.TC_006')
+data.setCell(5, 3, 13819);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'failedtest')
+data.setCell(6, 2, 'testCases.TC_002')
+data.setCell(6, 3, 13502);
 window.suiteTableData['Cmas_360_Agent']= { tableData: data, tableDiv: 'times-div-Cmas_360_Agent'}
 return data;
 }
@@ -399,7 +471,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCases.TC_004</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.TC_007</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">launchBrowser</span>
                 <span class="method-start">0 ms</span>
@@ -408,14 +480,12 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC_001</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">login</span>
-                <span class="method-start">38107 ms</span>
+                <span class="method-start">9953 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=login status=FAILURE method=TC_001.login()[pri:0, instance:testCases.TC_001@59f99ea...)</span>
-                <span class="method-start">188941 ms</span>
+                <span class="method-name">teardown([TestResult name=login status=SUCCESS method=TC_001.login()[pri:0, instance:testCases.TC_001@59f99ea...)</span>
+                <span class="method-start">42297 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -424,41 +494,74 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">failedtest</span>
-                <span class="method-start">322002 ms</span>
+                <span class="method-start">42344 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown([TestResult name=failedtest status=FAILURE method=TC_002.failedtest()[pri:0, instance:testCases.TC_0...)</span>
-                <span class="method-start">323208 ms</span>
+                <span class="method-start">55847 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC_003</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">ValidCancel</span>
-                <span class="method-start">324280 ms</span>
+                <span class="method-start">57132 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=ValidCancel status=FAILURE method=TC_003.ValidCancel()[pri:0, instance:testCases.TC...)</span>
-                <span class="method-start">325410 ms</span>
+                <span class="method-name">teardown([TestResult name=ValidCancel status=SUCCESS method=TC_003.ValidCancel()[pri:0, instance:testCases.TC...)</span>
+                <span class="method-start">71475 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC_004</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">InvalidCancel</span>
-                <span class="method-start">326403 ms</span>
+                <span class="method-start">71506 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=InvalidCancel status=FAILURE method=TC_004.InvalidCancel()[pri:0, instance:testCase...)</span>
-                <span class="method-start">327505 ms</span>
+                <span class="method-name">teardown([TestResult name=InvalidCancel status=SUCCESS method=TC_004.InvalidCancel()[pri:0, instance:testCase...)</span>
+                <span class="method-start">86959 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_005</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">EmptyValidationToSave</span>
+                <span class="method-start">86997 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=EmptyValidationToSave status=FAILURE method=TC_005.EmptyValidationToSave()[pri:0, i...)</span>
+                <span class="method-start">127261 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_006</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">illegelValidationToSave</span>
+                <span class="method-start">128477 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=illegelValidationToSave status=SUCCESS method=TC_006.illegelValidationToSave()[pri:...)</span>
+                <span class="method-start">142296 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC_007</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">emptyValidationToCancel</span>
+                <span class="method-start">142296 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=emptyValidationToCancel status=FAILURE method=TC_007.emptyValidationToCancel()[pri:...)</span>
+                <span class="method-start">186345 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">close</span>
-                <span class="method-start">328524 ms</span>
+                <span class="method-start">187808 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

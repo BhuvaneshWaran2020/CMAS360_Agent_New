@@ -35,6 +35,33 @@
 
 
 	</test>
+	
+	<test name="EmptyValidationToSave">
+		<classes>
+			<class name="testCases.TC_005"></class>
+		</classes>
+
+
+
+	</test>
+	
+	<test name="illegelValidationToSave">
+		<classes>
+			<class name="testCases.TC_006"></class>
+		</classes>
+
+
+
+	</test>
+	
+	<test name="emptyValidationToCancel">
+		<classes>
+			<class name="testCases.TC_007"></class>
+		</classes>
+
+
+
+	</test>
 
 
 

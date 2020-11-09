@@ -48,21 +48,10 @@ public class TC_007 extends Base_class
 		Setup_Company_PageObjects.Cancel_Button.click();
 		Thread.sleep(5000);
 
-		String actual_value=driver.findElement(By.xpath("//*[@id='tblcompany']/tbody/tr[*]/td[text()='bhuvanesh']")).getText();
 		
 		
-		String expected_value="";
 		
-		if(actual_value==expected_value)
-		{
-			System.out.println("testcase Passed");
-			Assert.assertTrue(false);
-		}else if(actual_value!=expected_value)
-		{
-			
-			Assert.assertTrue(true);
-			System.out.println("testcase failed");
-		}
+		
 
 		
 

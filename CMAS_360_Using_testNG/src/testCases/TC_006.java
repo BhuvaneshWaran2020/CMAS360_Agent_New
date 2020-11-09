@@ -53,7 +53,7 @@ public class TC_006 extends Base_class
 
 		Thread.sleep(3000);
 
-		String Actual_value=driver.findElement(By.xpath("//*[@id='tblcompany']/tbody/tr[1]/td[2]")).getText();
+		String Actual_value=driver.findElement(By.xpath("//*[@id='tblcompany']/tbody/tr[*]/td[text()='@#$@#$']")).getText();
 
 		System.out.println(Actual_value);
 
