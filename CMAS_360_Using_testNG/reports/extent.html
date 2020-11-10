@@ -44,7 +44,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Nov 10, 2020 11:35:31 AM</span>
+			<span class='label blue darken-3 suite-start-time'>Nov 10, 2020 02:13:00 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -59,7 +59,8 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -102,10 +103,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='85.714%'><span class='strong'>6</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>7</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='14.286%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -123,17 +124,17 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>ValidInputsToCreateNewCompany</span>
-						<span class='test-time'>Nov 10, 2020 11:35:40 AM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Nov 10, 2020 02:13:11 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 10, 2020 11:35:40 AM</span>
-	<span class='label end-time'>Nov 10, 2020 11:36:10 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 29s+464ms</span>
+	<span class='label start-time'>Nov 10, 2020 02:13:11 PM</span>
+	<span class='label end-time'>Nov 10, 2020 02:13:47 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 35s+546ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -145,11 +146,11 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>11:36:10 AM</td>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>2:13:47 PM</td>
 				<td class='step-details'>
-						<details><summary><b><font color=red>Exception Occured,click to see details :</font></b></summary>[org.testng.Assert.fail(Assert.java:96)<br> org.testng.Assert.failNotEquals(Assert.java:776)<br> org.testng.Assert.assertEqualsImpl(Assert.java:137)<br> org.testng.Assert.assertEquals(Assert.java:118)<br> org.testng.Assert.assertEquals(Assert.java:453)<br> org.testng.Assert.assertEquals(Assert.java:463)<br> testCases.TC_001.login(TC_001.java:82)<br> sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br> sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br> java.lang.reflect.Method.invoke(Unknown Source)<br> org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br> org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br> org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br> org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br> org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br> org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br> org.testng.TestRunner.privateRun(TestRunner.java:648)<br> org.testng.TestRunner.run(TestRunner.java:505)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br> org.testng.SuiteRunner.run(SuiteRunner.java:364)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br> org.testng.TestNG.runSuites(TestNG.java:1049)<br> org.testng.TestNG.run(TestNG.java:1017)<br> org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br> org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br> org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]</details>
+						<span class='badge white-text green'><b>Test Method loginSuccessful</b></span>
 					
 				</td>
 			</tr>
@@ -161,14 +162,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>FailedTestCase</span>
-						<span class='test-time'>Nov 10, 2020 11:36:11 AM</span>
+						<span class='test-time'>Nov 10, 2020 02:13:47 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 10, 2020 11:36:11 AM</span>
-	<span class='label end-time'>Nov 10, 2020 11:36:11 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+42ms</span>
+	<span class='label start-time'>Nov 10, 2020 02:13:47 PM</span>
+	<span class='label end-time'>Nov 10, 2020 02:14:02 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+55ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -182,9 +183,25 @@
 		<tbody>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>11:36:11 AM</td>
+				<td class='timestamp'>2:14:01 PM</td>
 				<td class='step-details'>
-						<details><summary><b><font color=red>Exception Occured,click to see details :</font></b></summary>[sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br> sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br> sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br> java.lang.reflect.Constructor.newInstance(Unknown Source)<br> org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br> org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br> org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br> org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br> org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br> org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br> org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br> org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br> org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br> org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br> org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)<br> org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)<br> com.sun.proxy.$Proxy10.click(Unknown Source)<br> testCases.TC_002.failedtest(TC_002.java:25)<br> sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br> sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br> java.lang.reflect.Method.invoke(Unknown Source)<br> org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br> org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br> org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br> org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br> org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br> org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br> org.testng.TestRunner.privateRun(TestRunner.java:648)<br> org.testng.TestRunner.run(TestRunner.java:505)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br> org.testng.SuiteRunner.run(SuiteRunner.java:364)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br> org.testng.TestNG.runSuites(TestNG.java:1049)<br> org.testng.TestNG.run(TestNG.java:1017)<br> org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br> org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br> org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]</details>
+						<details><summary><b><font color=red>Exception Occured,click to see details :</font></b></summary>[org.testng.Assert.fail(Assert.java:96)<br> org.testng.Assert.failNotEquals(Assert.java:776)<br> org.testng.Assert.assertEqualsImpl(Assert.java:137)<br> org.testng.Assert.assertEquals(Assert.java:118)<br> org.testng.Assert.assertEquals(Assert.java:453)<br> org.testng.Assert.assertEquals(Assert.java:463)<br> testCases.TC_002.failedtest(TC_002.java:94)<br> sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br> sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br> java.lang.reflect.Method.invoke(Unknown Source)<br> org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br> org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br> org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br> org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br> org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br> org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br> org.testng.TestRunner.privateRun(TestRunner.java:648)<br> org.testng.TestRunner.run(TestRunner.java:505)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br> org.testng.SuiteRunner.run(SuiteRunner.java:364)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br> org.testng.TestNG.runSuites(TestNG.java:1049)<br> org.testng.TestNG.run(TestNG.java:1017)<br> org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br> org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br> org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]</details>
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>2:14:02 PM</td>
+				<td class='step-details'>
+						<b><font color=red>Screenshot of failure</font></b>
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\rndsoftbcp\git\CMAS360_Agent_New\CMAS_360_Using_testNG/screenshots/failedtest_Tue Nov 10 14_14_01 IST 2020.png' src='C:\Users\rndsoftbcp\git\CMAS360_Agent_New\CMAS_360_Using_testNG/screenshots/failedtest_Tue Nov 10 14_14_01 IST 2020.png' data-src='C:\Users\rndsoftbcp\git\CMAS360_Agent_New\CMAS_360_Using_testNG/screenshots/failedtest_Tue Nov 10 14_14_01 IST 2020.png'>
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>2:14:02 PM</td>
+				<td class='step-details'>
+						<span class='badge white-text red'><b>Test Method failedtestFailed</b></span>
 					
 				</td>
 			</tr>
@@ -193,17 +210,17 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>GivenValidInputsToCancel</span>
-						<span class='test-time'>Nov 10, 2020 11:36:11 AM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Nov 10, 2020 02:14:02 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 10, 2020 11:36:11 AM</span>
-	<span class='label end-time'>Nov 10, 2020 11:36:11 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+9ms</span>
+	<span class='label start-time'>Nov 10, 2020 02:14:02 PM</span>
+	<span class='label end-time'>Nov 10, 2020 02:14:16 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+455ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -215,11 +232,11 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>11:36:11 AM</td>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>2:14:16 PM</td>
 				<td class='step-details'>
-						<details><summary><b><font color=red>Exception Occured,click to see details :</font></b></summary>[sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br> sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br> sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br> java.lang.reflect.Constructor.newInstance(Unknown Source)<br> org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br> org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br> org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br> org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br> org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br> org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br> org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br> org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br> org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br> org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br> org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)<br> org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)<br> com.sun.proxy.$Proxy10.click(Unknown Source)<br> testCases.TC_003.ValidCancel(TC_003.java:29)<br> sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br> sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br> java.lang.reflect.Method.invoke(Unknown Source)<br> org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br> org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br> org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br> org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br> org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br> org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br> org.testng.TestRunner.privateRun(TestRunner.java:648)<br> org.testng.TestRunner.run(TestRunner.java:505)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br> org.testng.SuiteRunner.run(SuiteRunner.java:364)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br> org.testng.TestNG.runSuites(TestNG.java:1049)<br> org.testng.TestNG.run(TestNG.java:1017)<br> org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br> org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br> org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]</details>
+						<span class='badge white-text green'><b>Test Method ValidCancelSuccessful</b></span>
 					
 				</td>
 			</tr>
@@ -228,17 +245,17 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
 						<span class='test-name'>GivenInvalidInputsToCancel</span>
-						<span class='test-time'>Nov 10, 2020 11:36:11 AM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Nov 10, 2020 02:14:16 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 10, 2020 11:36:11 AM</span>
-	<span class='label end-time'>Nov 10, 2020 11:36:11 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+9ms</span>
+	<span class='label start-time'>Nov 10, 2020 02:14:16 PM</span>
+	<span class='label end-time'>Nov 10, 2020 02:14:32 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+872ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -250,11 +267,11 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>11:36:11 AM</td>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>2:14:32 PM</td>
 				<td class='step-details'>
-						<details><summary><b><font color=red>Exception Occured,click to see details :</font></b></summary>[sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br> sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br> sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br> java.lang.reflect.Constructor.newInstance(Unknown Source)<br> org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br> org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br> org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br> org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br> org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br> org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br> org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br> org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br> org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br> org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br> org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)<br> org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)<br> com.sun.proxy.$Proxy10.click(Unknown Source)<br> testCases.TC_004.InvalidCancel(TC_004.java:24)<br> sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br> sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br> java.lang.reflect.Method.invoke(Unknown Source)<br> org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br> org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br> org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br> org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br> org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br> org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br> org.testng.TestRunner.privateRun(TestRunner.java:648)<br> org.testng.TestRunner.run(TestRunner.java:505)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br> org.testng.SuiteRunner.run(SuiteRunner.java:364)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br> org.testng.TestNG.runSuites(TestNG.java:1049)<br> org.testng.TestNG.run(TestNG.java:1017)<br> org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br> org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br> org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]</details>
+						<span class='badge white-text green'><b>Test Method InvalidCancelSuccessful</b></span>
 					
 				</td>
 			</tr>
@@ -263,17 +280,17 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='5'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
 						<span class='test-name'>EmptyValidationToSave</span>
-						<span class='test-time'>Nov 10, 2020 11:36:11 AM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Nov 10, 2020 02:14:32 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 10, 2020 11:36:11 AM</span>
-	<span class='label end-time'>Nov 10, 2020 11:36:11 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+47ms</span>
+	<span class='label start-time'>Nov 10, 2020 02:14:32 PM</span>
+	<span class='label end-time'>Nov 10, 2020 02:14:43 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+125ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -285,11 +302,11 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>11:36:11 AM</td>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>2:14:43 PM</td>
 				<td class='step-details'>
-						<details><summary><b><font color=red>Exception Occured,click to see details :</font></b></summary>[sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br> sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br> sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br> java.lang.reflect.Constructor.newInstance(Unknown Source)<br> org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br> org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br> org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br> org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br> org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br> org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br> org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br> org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br> org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br> org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br> org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)<br> org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)<br> com.sun.proxy.$Proxy10.click(Unknown Source)<br> testCases.TC_005.EmptyValidationToSave(TC_005.java:24)<br> sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br> sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br> java.lang.reflect.Method.invoke(Unknown Source)<br> org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br> org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br> org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br> org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br> org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br> org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br> org.testng.TestRunner.privateRun(TestRunner.java:648)<br> org.testng.TestRunner.run(TestRunner.java:505)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br> org.testng.SuiteRunner.run(SuiteRunner.java:364)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br> org.testng.TestNG.runSuites(TestNG.java:1049)<br> org.testng.TestNG.run(TestNG.java:1017)<br> org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br> org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br> org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]</details>
+						<span class='badge white-text green'><b>Test Method EmptyValidationToSaveSuccessful</b></span>
 					
 				</td>
 			</tr>
@@ -298,17 +315,17 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='6'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
 					<div class='test-heading'>
 						<span class='test-name'>illegelValidationToSave</span>
-						<span class='test-time'>Nov 10, 2020 11:36:11 AM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Nov 10, 2020 02:14:43 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 10, 2020 11:36:11 AM</span>
-	<span class='label end-time'>Nov 10, 2020 11:36:11 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+32ms</span>
+	<span class='label start-time'>Nov 10, 2020 02:14:43 PM</span>
+	<span class='label end-time'>Nov 10, 2020 02:14:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+262ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -320,11 +337,11 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>11:36:11 AM</td>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>2:14:58 PM</td>
 				<td class='step-details'>
-						<details><summary><b><font color=red>Exception Occured,click to see details :</font></b></summary>[sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br> sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br> sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br> java.lang.reflect.Constructor.newInstance(Unknown Source)<br> org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br> org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br> org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br> org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br> org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br> org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br> org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br> org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br> org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br> org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br> org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)<br> org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)<br> com.sun.proxy.$Proxy10.click(Unknown Source)<br> testCases.TC_006.illegelValidationToSave(TC_006.java:24)<br> sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br> sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br> java.lang.reflect.Method.invoke(Unknown Source)<br> org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br> org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br> org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br> org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br> org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br> org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br> org.testng.TestRunner.privateRun(TestRunner.java:648)<br> org.testng.TestRunner.run(TestRunner.java:505)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br> org.testng.SuiteRunner.run(SuiteRunner.java:364)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br> org.testng.TestNG.runSuites(TestNG.java:1049)<br> org.testng.TestNG.run(TestNG.java:1017)<br> org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br> org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br> org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]</details>
+						<span class='badge white-text green'><b>Test Method illegelValidationToSaveSuccessful</b></span>
 					
 				</td>
 			</tr>
@@ -333,17 +350,17 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='7'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
 					<div class='test-heading'>
 						<span class='test-name'>emptyValidationToCancel</span>
-						<span class='test-time'>Nov 10, 2020 11:36:11 AM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>Nov 10, 2020 02:14:58 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 10, 2020 11:36:11 AM</span>
-	<span class='label end-time'>Nov 10, 2020 11:36:11 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+15ms</span>
+	<span class='label start-time'>Nov 10, 2020 02:14:58 PM</span>
+	<span class='label end-time'>Nov 10, 2020 02:15:13 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+228ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -355,11 +372,11 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr class='log' status='fail'>
-				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>11:36:11 AM</td>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>2:15:13 PM</td>
 				<td class='step-details'>
-						<details><summary><b><font color=red>Exception Occured,click to see details :</font></b></summary>[sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br> sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)<br> sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)<br> java.lang.reflect.Constructor.newInstance(Unknown Source)<br> org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br> org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br> org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br> org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br> org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br> org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br> org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br> org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br> org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br> org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br> org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)<br> org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)<br> com.sun.proxy.$Proxy10.click(Unknown Source)<br> testCases.TC_007.emptyValidationToCancel(TC_007.java:24)<br> sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br> sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)<br> sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)<br> java.lang.reflect.Method.invoke(Unknown Source)<br> org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br> org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br> org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br> org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br> org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br> org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br> org.testng.TestRunner.privateRun(TestRunner.java:648)<br> org.testng.TestRunner.run(TestRunner.java:505)<br> org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br> org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br> org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br> org.testng.SuiteRunner.run(SuiteRunner.java:364)<br> org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br> org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br> org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br> org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br> org.testng.TestNG.runSuites(TestNG.java:1049)<br> org.testng.TestNG.run(TestNG.java:1017)<br> org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br> org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br> org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]</details>
+						<span class='badge white-text green'><b>Test Method emptyValidationToCancelSuccessful</b></span>
 					
 				</td>
 			</tr>
@@ -408,19 +425,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 10, 2020 11:35:31 AM</div>
+					<div class='panel-lead'>Nov 10, 2020 02:13:00 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 10, 2020 11:36:11 AM</div>
+			 		<div class='panel-lead'>Nov 10, 2020 02:15:13 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 40s+297ms</div>
+					<div class='panel-lead'>0h 2m 13s+65ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -460,13 +477,13 @@
 		<script>
 			var statusGroup = {
                 parentCount: 7,
-				passParent: 0,
-				failParent: 7,
+				passParent: 6,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 7,
+				exceptionsParent: 1,
 				childCount: 0,
 				passChild: 0,
 				failChild: 0,
@@ -491,7 +508,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "ValidInputsToCreateNewCompany":29.464,"FailedTestCase":0.042,"GivenValidInputsToCancel":0.009,"GivenInvalidInputsToCancel":0.009,"EmptyValidationToSave":0.047,"illegelValidationToSave":0.032,"emptyValidationToCancel":0.015
+			        "ValidInputsToCreateNewCompany":35.546,"FailedTestCase":15.055,"GivenValidInputsToCancel":14.455,"GivenInvalidInputsToCancel":15.872,"EmptyValidationToSave":11.125,"illegelValidationToSave":14.262,"emptyValidationToCancel":15.228
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>

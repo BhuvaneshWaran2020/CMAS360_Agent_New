@@ -49,11 +49,22 @@ public class TC_005 extends Base_class
 
 		Thread.sleep(3000);
 
-		Setup_Company_PageObjects.Ok.click();
-
-		Thread.sleep(3000);
+		
 
 		
+		
+		boolean t=driver.findElement(By.xpath("//body/div[3]/div[1]/div[1]/main[1]/div[3]/div[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/ul[1]/li[1]")).isDisplayed();
+
+		if(t=true)
+		{
+			Assert.assertTrue(true);
+			System.out.println("passed");
+		}
+		else
+		{
+			Assert.assertTrue(false);
+			System.out.println("failed");
+		}
 
 		 
 
