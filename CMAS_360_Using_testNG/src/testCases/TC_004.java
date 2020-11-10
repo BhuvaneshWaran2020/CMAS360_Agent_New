@@ -18,22 +18,44 @@ public class TC_004 extends Base_class
 	@Test
 	public void InvalidCancel() throws InterruptedException
 	{
-		test=extent.createTest("GivenInvalidInputsToCancel");		
+		//Create 1 test in extent Report
+		test=extent.createTest("GivenInvalidInputsToCancel");
+		
+		// Using pagefactory 
 		PageFactory.initElements(driver, Setup_Company_PageObjects.class);
 
+		//click setup link in cmas application
 		Setup_Company_PageObjects.SetUp.click();
+		
+		//click Company link in cmas application
 		Setup_Company_PageObjects.Company.click();
+		
+		//click New link in cmas application
 		Setup_Company_PageObjects.New.click();
+		
+		//Send value to AgencyName in cmas application
 		Setup_Company_PageObjects.AgencyName.sendKeys("@#$@#$@Rndsoft");
+		
+		//Send value to Abn.no in cmas application
 		Setup_Company_PageObjects.ABN_No.sendKeys("");
+		
+		//Send value to Address in cmas application
 		Setup_Company_PageObjects.Address.sendKeys("3, tirupur");
+		
+		//Send value to contact Email in cmas application
 		Setup_Company_PageObjects.Contact_Email.sendKeys("@#$bhuvaneh@gmail.com");
+		
+		//Send value to Enquiry_Email in cmas application
 		Setup_Company_PageObjects.Enquiry_Email.sendKeys("bhuvaneh@gmail.com");
+		
+		//Send value to Contact_Person in cmas application
 		Setup_Company_PageObjects.Contact_Person.sendKeys("bhuvaneh");
+		
+		//Send value to Telephone in cmas application
 		Setup_Company_PageObjects.Telephone.sendKeys("9865328598");
 
 
-
+		//Using Robot class to Down page
 		try {
 			Robot robot=new Robot();
 			robot.keyPress(KeyEvent.VK_PAGE_DOWN);
@@ -42,28 +64,15 @@ public class TC_004 extends Base_class
 
 			e.printStackTrace();
 		}
-
+		//3 min slow
 		Thread.sleep(5000);
-
+		
+		//Click Cancel button
 		Setup_Company_PageObjects.Cancel_Button.click();
+		
+		//3 min slow
 		Thread.sleep(5000);
 
-		/*String actual_value=driver.findElement(By.xpath("//*[@id='tblcompany']/tbody/tr[*]/td[text()='@#$@#$@Rndsoft']")).getText();
-		
-		
-		String expected_value="@#$@#$@Rndsoft";
-		
-		if(actual_value==expected_value)
-		{
-			System.out.println("testcase failed");
-			Assert.assertTrue(false);
-		}else if(actual_value!=expected_value)
-		{
-			
-			Assert.assertTrue(true);
-		}*/
-
-		
 
 
 
@@ -79,7 +88,9 @@ public class TC_004 extends Base_class
 
 
 
+
+		// move to default browser
 		driver.switchTo().defaultContent();
 	}
-	
+
 }
